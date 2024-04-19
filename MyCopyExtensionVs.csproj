@@ -72,6 +72,7 @@
     <Compile Include="Commands\CommandProjNodeCopyPath.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MyCopyExtensionVsPackage.cs" />
+    <Compile Include="Tools\ClipboardTools.cs" />
     <Compile Include="VisualStudio\ProjectSettings.cs" />
   </ItemGroup>
   <ItemGroup>

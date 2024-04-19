@@ -2,7 +2,9 @@
 using EnvDTE80;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
+using MyCopyExtensionVs.Tools;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.IO;
 using System.Windows.Forms;
@@ -96,19 +98,19 @@ namespace MyCopyExtensionVs.Commands
                 return;
             }
 
-            FileInfo path = null;
+            List<FileInfo> paths = new List<FileInfo>();
             try
             {
                 foreach (SelectedItem selectedItem in selectedItems)
                 {
-                    path = ProjectSettings.GetSelectedItemPath(selectedItem);
+                    paths.Add(ProjectSettings.GetSelectedItemPath(selectedItem));
                 }
             }
             catch (FileNotFoundException)
             {
-                path = ProjectSettings.LookingForSelectedItem(this.ServiceProviderSys);
+                paths.Add(ProjectSettings.LookingForSelectedItem(this.ServiceProviderSys));
             }
-            Clipboard.SetText(path.FullName);
+            ClipboardTools.SetPathText(paths, false);
         }
     }
 }
