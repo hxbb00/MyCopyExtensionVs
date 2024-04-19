@@ -19,8 +19,8 @@ jobs:
           workflow_conclusion: success
 
       - name: Publish Release to Marketplace
-        uses: CalvinAllen/action-vs-marketplace-publish@v1
+        uses: cezarypiatek/VsixPublisherAction@1.1
         with:
-          marketplace-pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}
-          publish-manifest-path: ./extension.manifest.json
-          vsix-path: ./artifact/MyCopyExtensionVs.vsix
+          personal-access-code: ${{ secrets.VS_MARKETPLACE_TOKEN }}
+          publish-manifest-file: ./extension.manifest.json
+          extension-file: ./artifact/MyCopyExtensionVs.vsix
