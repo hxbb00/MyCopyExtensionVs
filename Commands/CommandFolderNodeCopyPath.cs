@@ -108,7 +108,7 @@ namespace MyCopyExtensionVs.Commands
             {
                 path = ProjectSettings.LookingForSelectedItem(this.ServiceProviderSys);
             }
-            Clipboard.SetText(path.FullName);
+            Clipboard.SetText(path.FullName.TrimEnd('\\', '/'));
         }
     }
 }
