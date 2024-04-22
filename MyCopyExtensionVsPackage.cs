@@ -60,12 +60,12 @@ namespace MyCopyExtensionVs
 
             await CommandItemNodeCopyRelativePath.InitializeAsync(this);
             await CommandFolderNodeCopyRelativePath.InitializeAsync(this);
-            await CommandProjNodeCopyRelativePath.InitializeAsync(this);
+            //await CommandProjNodeCopyRelativePath.InitializeAsync(this);
 
 
             await CommandItemNodeCopyRelativeLinuxPath.InitializeAsync(this);
             await CommandFolderNodeCopyRelativeLinuxPath.InitializeAsync(this);
-            await CommandProjNodeCopyRelativeLinuxPath.InitializeAsync(this);
+            //await CommandProjNodeCopyRelativeLinuxPath.InitializeAsync(this);
         }
 
         #endregion

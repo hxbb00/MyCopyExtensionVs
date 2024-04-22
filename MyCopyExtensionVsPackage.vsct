@@ -180,14 +180,6 @@
 				</Strings>
 			</Button>
 
-			<Button guid="guidMyCopyExtensionVsPackageCmdSet" id="PROJNODE_CommandCopyRelativePath" priority="0x0100" type="Button">
-				<Parent guid="guidMyCopyExtensionVsPackageCmdSet" id="PROJNODE_MyMenuGroup" />
-				<Icon guid="guidImages" id="bmpPic1" />
-				<Strings>
-					<ButtonText>Copy Relative Path</ButtonText>
-				</Strings>
-			</Button>
-
 			<Button guid="guidMyCopyExtensionVsPackageCmdSet" id="FOLDERNODE_CommandCopyRelativePath" priority="0x0100" type="Button">
 				<Parent guid="guidMyCopyExtensionVsPackageCmdSet" id="FOLDERNODE_MyMenuGroup" />
 				<Icon guid="guidImages" id="bmpPic1" />
@@ -198,14 +190,6 @@
 
 			<Button guid="guidMyCopyExtensionVsPackageCmdSet" id="ITEMNODE_CommandCopyRelativeLinuxPath" priority="0x0100" type="Button">
 				<Parent guid="guidMyCopyExtensionVsPackageCmdSet" id="ITEMNODE_MyMenuGroup" />
-				<Icon guid="guidImages" id="bmpPic1" />
-				<Strings>
-					<ButtonText>Copy Relative Path(Linux Style)</ButtonText>
-				</Strings>
-			</Button>
-
-			<Button guid="guidMyCopyExtensionVsPackageCmdSet" id="PROJNODE_CommandCopyRelativeLinuxPath" priority="0x0100" type="Button">
-				<Parent guid="guidMyCopyExtensionVsPackageCmdSet" id="PROJNODE_MyMenuGroup" />
 				<Icon guid="guidImages" id="bmpPic1" />
 				<Strings>
 					<ButtonText>Copy Relative Path(Linux Style)</ButtonText>
