@@ -11,7 +11,7 @@ Add copy feature for all items within the solution explorer.
 
 ## Snapshots
 
-![Snapshot](./Images/MyCopyExtensionVs.png)  
+![Snapshot](https://github.com/hxbb00/MyCopyExtensionVs/raw/main/Images/MyCopyExtensionVs.png)  
 
 ## License
 
