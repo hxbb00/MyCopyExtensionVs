@@ -13,6 +13,7 @@
 // limitations under the License.
 //
 using EnvDTE;
+using Microsoft.Internal.VisualStudio.PlatformUI;
 using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
@@ -28,6 +29,16 @@ namespace MyCopyExtensionVs
 {
     internal static class ProjectSettings
     {
+        static internal string FindProjectsIn(EnvDTE.ProjectItem item)
+        {
+            ThreadHelper.ThrowIfNotOnUIThread();
+            if (null != item && item.ContainingProject != null)
+            {
+                return item.ContainingProject.FullName;
+            }
+            return string.Empty;
+        }
+
         private static Dictionary<string, object> GetAllProperty(Properties properties)
         {
             ThreadHelper.ThrowIfNotOnUIThread();
@@ -141,7 +152,7 @@ namespace MyCopyExtensionVs
         {
             ThreadHelper.ThrowIfNotOnUIThread();
 
-            if(IsRooted(filePath) == false)
+            if (IsRooted(filePath) == false)
             {
                 var projectPath = GetProjectPath(proj);
                 filePath = Path.Combine(projectPath.Directory.FullName, filePath ?? string.Empty);

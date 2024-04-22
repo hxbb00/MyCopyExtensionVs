@@ -61,18 +61,25 @@
     <StartArguments>/rootsuffix Exp</StartArguments>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Commands\CommandFolderNodeCopyRelativeLinuxPath.cs" />
     <Compile Include="Commands\CommandFolderNodeCopyLinuxPath.cs" />
+    <Compile Include="Commands\CommandFolderNodeCopyRelativePath.cs" />
     <Compile Include="Commands\CommandFolderNodeCopyPath.cs" />
+    <Compile Include="Commands\CommandItemNodeCopyRelativeLinuxPath.cs" />
     <Compile Include="Commands\CommandItemNodeCopyLinuxPath.cs" />
+    <Compile Include="Commands\CommandItemNodeCopyRelativePath.cs" />
     <Compile Include="Commands\CommandItemNodeCopyPath.cs" />
+    <Compile Include="Commands\CommandProjNodeCopyRelativeLinuxPath.cs" />
     <Compile Include="Commands\CommandProjNodeCopyLinuxPath.cs" />
     <Compile Include="Commands\CommandProjNodeCopyName.cs" />
     <Compile Include="Commands\CommandFolderNodeCopyName.cs" />
     <Compile Include="Commands\CommandItemNodeCopyName.cs" />
+    <Compile Include="Commands\CommandProjNodeCopyRelativePath.cs" />
     <Compile Include="Commands\CommandProjNodeCopyPath.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MyCopyExtensionVsPackage.cs" />
     <Compile Include="Tools\ClipboardTools.cs" />
+    <Compile Include="Tools\FileInfoWithProject.cs" />
     <Compile Include="VisualStudio\ProjectSettings.cs" />
   </ItemGroup>
   <ItemGroup>

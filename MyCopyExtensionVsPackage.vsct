@@ -168,6 +168,57 @@
 					<ButtonText>Copy Path(Linux Style)</ButtonText>
 				</Strings>
 			</Button>
+
+
+
+
+			<Button guid="guidMyCopyExtensionVsPackageCmdSet" id="ITEMNODE_CommandCopyRelativePath" priority="0x0100" type="Button">
+				<Parent guid="guidMyCopyExtensionVsPackageCmdSet" id="ITEMNODE_MyMenuGroup" />
+				<Icon guid="guidImages" id="bmpPic1" />
+				<Strings>
+					<ButtonText>Copy Relative Path</ButtonText>
+				</Strings>
+			</Button>
+
+			<Button guid="guidMyCopyExtensionVsPackageCmdSet" id="PROJNODE_CommandCopyRelativePath" priority="0x0100" type="Button">
+				<Parent guid="guidMyCopyExtensionVsPackageCmdSet" id="PROJNODE_MyMenuGroup" />
+				<Icon guid="guidImages" id="bmpPic1" />
+				<Strings>
+					<ButtonText>Copy Relative Path</ButtonText>
+				</Strings>
+			</Button>
+
+			<Button guid="guidMyCopyExtensionVsPackageCmdSet" id="FOLDERNODE_CommandCopyRelativePath" priority="0x0100" type="Button">
+				<Parent guid="guidMyCopyExtensionVsPackageCmdSet" id="FOLDERNODE_MyMenuGroup" />
+				<Icon guid="guidImages" id="bmpPic1" />
+				<Strings>
+					<ButtonText>Copy Relative Path</ButtonText>
+				</Strings>
+			</Button>
+
+			<Button guid="guidMyCopyExtensionVsPackageCmdSet" id="ITEMNODE_CommandCopyRelativeLinuxPath" priority="0x0100" type="Button">
+				<Parent guid="guidMyCopyExtensionVsPackageCmdSet" id="ITEMNODE_MyMenuGroup" />
+				<Icon guid="guidImages" id="bmpPic1" />
+				<Strings>
+					<ButtonText>Copy Relative Path(Linux Style)</ButtonText>
+				</Strings>
+			</Button>
+
+			<Button guid="guidMyCopyExtensionVsPackageCmdSet" id="PROJNODE_CommandCopyRelativeLinuxPath" priority="0x0100" type="Button">
+				<Parent guid="guidMyCopyExtensionVsPackageCmdSet" id="PROJNODE_MyMenuGroup" />
+				<Icon guid="guidImages" id="bmpPic1" />
+				<Strings>
+					<ButtonText>Copy Relative Path(Linux Style)</ButtonText>
+				</Strings>
+			</Button>
+
+			<Button guid="guidMyCopyExtensionVsPackageCmdSet" id="FOLDERNODE_CommandCopyRelativeLinuxPath" priority="0x0100" type="Button">
+				<Parent guid="guidMyCopyExtensionVsPackageCmdSet" id="FOLDERNODE_MyMenuGroup" />
+				<Icon guid="guidImages" id="bmpPic1" />
+				<Strings>
+					<ButtonText>Copy Relative Path(Linux Style)</ButtonText>
+				</Strings>
+			</Button>
 		</Buttons>
 
 		<!--The bitmaps section is used to define the bitmaps that are used for the commands.-->
@@ -193,6 +244,8 @@
 			<IDSymbol name="ITEMNODE_CommandCopy" value="0x0100" />
 			<IDSymbol name="ITEMNODE_CommandCopyPath" value="0x0101" />
 			<IDSymbol name="ITEMNODE_CommandCopyLinuxPath" value="0x0102" />
+			<IDSymbol name="ITEMNODE_CommandCopyRelativePath" value="0x0103" />
+			<IDSymbol name="ITEMNODE_CommandCopyRelativeLinuxPath" value="0x0104" />
 
 			<IDSymbol name="PROJNODE_MyMenuGroupRoot" value="0x2010" />
 			<IDSymbol name="PROJNODE_MyMenuGroup" value="0x2020" />
@@ -200,6 +253,8 @@
 			<IDSymbol name="PROJNODE_CommandCopy" value="0x0200" />
 			<IDSymbol name="PROJNODE_CommandCopyPath" value="0x0201" />
 			<IDSymbol name="PROJNODE_CommandCopyLinuxPath" value="0x0202" />
+			<IDSymbol name="PROJNODE_CommandCopyRelativePath" value="0x0203" />
+			<IDSymbol name="PROJNODE_CommandCopyRelativeLinuxPath" value="0x0204" />
 
 			<IDSymbol name="FOLDERNODE_MyMenuGroupRoot" value="0x3010" />
 			<IDSymbol name="FOLDERNODE_MyMenuGroup" value="0x3020" />
@@ -207,6 +262,8 @@
 			<IDSymbol name="FOLDERNODE_CommandCopy" value="0x0300" />
 			<IDSymbol name="FOLDERNODE_CommandCopyPath" value="0x0301" />
 			<IDSymbol name="FOLDERNODE_CommandCopyLinuxPath" value="0x0302" />
+			<IDSymbol name="FOLDERNODE_CommandCopyRelativePath" value="0x0303" />
+			<IDSymbol name="FOLDERNODE_CommandCopyRelativeLinuxPath" value="0x0304" />
 		</GuidSymbol>
 
 		<GuidSymbol name="guidImages" value="{81c50339-d34e-4b03-939c-41b5b7b41809}" >
